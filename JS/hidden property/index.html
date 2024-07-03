@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .panel {
+            font:
+                16px "Open Sans",
+                Helvetica,
+                Arial,
+                sans-serif;
+            border: 1px solid #22d;
+            padding: 12px;
+            width: 500px;
+            text-align: center;
+        }
+
+        .button {
+            font:
+                22px "Open Sans",
+                Helvetica,
+                Arial,
+                sans-serif;
+            padding: 5px 36px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 175%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="welcome" class="panel">
+        <h1>Welcome to Foobar.com!</h1>
+        <p>By clicking "OK" you agree to be awesome today!</p>
+        <button class="button" id="okButton">OK</button>
+    </div>
+
+    <div id="awesome" class="panel" hidden>
+        <h1>Thanks!</h1>
+        <p>Thanks for agreeing to be awesome today!</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

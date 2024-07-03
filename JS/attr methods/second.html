@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="harry" data-conceptby="rohan">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <script>
+            
+            //this is the script to create a new div with its properties like element and inner html and then inserting all of them befor the div in the main html
+
+            let div = document.createElement("div");
+            div.innerHTML = "I have been inserted <b>by pratham</b>"
+            div.setAttribute("class", "created");
+            document.querySelector(".container").before(div);
+
+            /*let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("beforebegin", "<b> I am under the water. Please help me here too much raining.... iuuuuooooo</b>")*/
+        </script>
+    </div>
+</body>
+
+</html>
